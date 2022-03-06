@@ -7,6 +7,14 @@ module.exports = {
   // to customize your Truffle configuration!
   contracts_build_directory: path.join(__dirname, 'client/src/contracts'),
   networks: {
+    main: {
+      provider: () =>
+        new HDWalletProvider(
+          process.env.MNEMONIC,
+          'https://mainnet.infura.io/v3/' + process.env.INFURA_API_KEY
+        ),
+      network_id: 1
+    },
     rinkeby: {
       provider: () =>
         new HDWalletProvider(

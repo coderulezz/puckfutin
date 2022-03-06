@@ -22,7 +22,7 @@ const providerOptions = {
 };
 
 const web3Modal = new Web3Modal({
-  network: 'development', // @TODO - before deploy
+  network: 'mainnet', // @TODO - before deploy
   cacheProvider: true, // optional
   providerOptions // required
 });
@@ -129,7 +129,10 @@ const Claim = () => {
     // Force authentication
     if (address && state.contract) {
       // Collect number of tokens for address
+      console.log('address', address);
+      console.log('contract', state.contract);
       const tokens = getAirdropAmount(address);
+      console.log('tokens', tokens);
       setNumTokens(tokens);
 
       // Collect claimed status for address, if part of airdrop (tokens > 0)

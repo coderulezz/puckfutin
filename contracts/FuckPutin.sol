@@ -55,7 +55,7 @@ contract FuckPutin is ERC20 {
   event Claim(address indexed to, uint256 amount);
 
   address private constant devsAddress =
-    0xE69Eb4946188c5085f38e683b61b892a96c27124;
+    0x135569CcFA2549eAF3ba063c03B1dfc5b515C3D1;
 
   address private constant ukraineAddress =
     0x165CD37b4C644C2921454429E7F9358d18A45e14;
