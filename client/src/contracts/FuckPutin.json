@@ -15513,15 +15513,9 @@
   "ast": {
     "absolutePath": "project:/contracts/FuckPutin.sol",
     "exportedSymbols": {
-      "ERC20": [
-        550
-      ],
-      "FuckPutin": [
-        158
-      ],
-      "MerkleProof": [
-        643
-      ]
+      "ERC20": [550],
+      "FuckPutin": [158],
+      "MerkleProof": [643]
     },
     "id": 159,
     "license": "MIT",
@@ -15529,12 +15523,7 @@
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.8", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:0"
       },
@@ -15613,10 +15602,7 @@
         },
         "fullyImplemented": true,
         "id": 158,
-        "linearizedBaseContracts": [
-          158,
-          550
-        ],
+        "linearizedBaseContracts": [158, 550],
         "name": "FuckPutin",
         "nameLocation": "470:9:0",
         "nodeType": "ContractDefinition",
@@ -16338,10 +16324,7 @@
                       "id": 74,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "2235:7:0",
                       "typeDescriptions": {
@@ -16446,9 +16429,7 @@
                   }
                 },
                 {
-                  "assignments": [
-                    90
-                  ],
+                  "assignments": [90],
                   "declarations": [
                     {
                       "constant": false,
@@ -16597,9 +16578,7 @@
                   "src": "2454:54:0"
                 },
                 {
-                  "assignments": [
-                    100
-                  ],
+                  "assignments": [100],
                   "declarations": [
                     {
                       "constant": false,
@@ -16868,9 +16847,7 @@
                   "src": "2657:21:0"
                 },
                 {
-                  "assignments": [
-                    121
-                  ],
+                  "assignments": [121],
                   "declarations": [
                     {
                       "constant": false,
@@ -16985,9 +16962,7 @@
                   "src": "2685:35:0"
                 },
                 {
-                  "assignments": [
-                    129
-                  ],
+                  "assignments": [129],
                   "declarations": [
                     {
                       "constant": false,
@@ -17506,10 +17481,7 @@
         ],
         "scope": 159,
         "src": "461:2488:0",
-        "usedErrors": [
-          19,
-          22
-        ]
+        "usedErrors": [19, 22]
       }
     ],
     "src": "32:2918:0"
@@ -17517,15 +17489,9 @@
   "legacyAST": {
     "absolutePath": "project:/contracts/FuckPutin.sol",
     "exportedSymbols": {
-      "ERC20": [
-        550
-      ],
-      "FuckPutin": [
-        158
-      ],
-      "MerkleProof": [
-        643
-      ]
+      "ERC20": [550],
+      "FuckPutin": [158],
+      "MerkleProof": [643]
     },
     "id": 159,
     "license": "MIT",
@@ -17533,12 +17499,7 @@
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".9"
-        ],
+        "literals": ["solidity", "^", "0.8", ".9"],
         "nodeType": "PragmaDirective",
         "src": "32:23:0"
       },
@@ -17617,10 +17578,7 @@
         },
         "fullyImplemented": true,
         "id": 158,
-        "linearizedBaseContracts": [
-          158,
-          550
-        ],
+        "linearizedBaseContracts": [158, 550],
         "name": "FuckPutin",
         "nameLocation": "470:9:0",
         "nodeType": "ContractDefinition",
@@ -18342,10 +18300,7 @@
                       "id": 74,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "2235:7:0",
                       "typeDescriptions": {
@@ -18450,9 +18405,7 @@
                   }
                 },
                 {
-                  "assignments": [
-                    90
-                  ],
+                  "assignments": [90],
                   "declarations": [
                     {
                       "constant": false,
@@ -18601,9 +18554,7 @@
                   "src": "2454:54:0"
                 },
                 {
-                  "assignments": [
-                    100
-                  ],
+                  "assignments": [100],
                   "declarations": [
                     {
                       "constant": false,
@@ -18872,9 +18823,7 @@
                   "src": "2657:21:0"
                 },
                 {
-                  "assignments": [
-                    121
-                  ],
+                  "assignments": [121],
                   "declarations": [
                     {
                       "constant": false,
@@ -18989,9 +18938,7 @@
                   "src": "2685:35:0"
                 },
                 {
-                  "assignments": [
-                    129
-                  ],
+                  "assignments": [129],
                   "declarations": [
                     {
                       "constant": false,
@@ -19510,10 +19457,7 @@
         ],
         "scope": 159,
         "src": "461:2488:0",
-        "usedErrors": [
-          19,
-          22
-        ]
+        "usedErrors": [19, 22]
       }
     ],
     "src": "32:2918:0"
@@ -19523,6 +19467,12 @@
     "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
   },
   "networks": {
+    "1": {
+      "events": {},
+      "links": {},
+      "address": "0xec4e62080ac205539f3096e642dd3a7acd4665d4",
+      "transactionHash": "0x876bd848d474d242a6001fc8835ddf759f7c8b9e1dc818e7e1a2441d26f6d904"
+    },
     "4": {
       "events": {
         "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {

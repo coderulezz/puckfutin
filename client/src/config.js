@@ -1,7 +1,6 @@
 export default {
   decimals: 18,
   airdrop: {
-    '0xad0637645341A160c4621a5AE22A709fECA37234': 50000,
     '0xffec0067f5a79cff07527f63d83dd5462ccf8ba4': 139023,
     '0x126accde9fa7cdc6cc8dcaae1f5071baae8a732a': 2026,
     '0x5cd6c6c099afea0adde1f9a6f2a67bb7fc4d3a07': 2112,
