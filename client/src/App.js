@@ -6,7 +6,7 @@ import Home from './Home';
 import './App.css';
 
 const App = () => {
-  const [claiming, setClaiming] = useState(true);
+  const [claiming, setClaiming] = useState(false);
 
   return (
     <Store>

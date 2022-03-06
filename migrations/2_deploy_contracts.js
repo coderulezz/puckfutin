@@ -6,7 +6,6 @@ module.exports = function (deployer) {
     'FuckPutin',
     'FPC',
     '18',
-    // @TODO: deploy change
-    '0xd425f9ca7b34dd090868c3ef06981e7bbed5aa0e4ff0b8307833fb57b3ae0ab6'
+    '0xdcc128a1837fc0a39198bd75bb83ea5a6e4aeeb789e9d34314f85d9840768650'
   );
 };

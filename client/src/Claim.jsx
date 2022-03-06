@@ -127,7 +127,7 @@ const Claim = () => {
     setLoadingData(true);
 
     // Force authentication
-    if (address) {
+    if (address && state.contract) {
       // Collect number of tokens for address
       const tokens = getAirdropAmount(address);
       setNumTokens(tokens);
@@ -233,7 +233,7 @@ const Claim = () => {
   useEffect(() => {
     syncStatus();
     // eslint-disable-next-line
-  }, [state.account]);
+  }, [state.account, state.contract]);
 
   return (
     <div className="container page">

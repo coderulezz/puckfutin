@@ -29,6 +29,8 @@ contract FuckPutin is ERC20 {
   /// @notice Thrown if address/amount are not part of Merkle tree
   error NotInMerkle();
 
+  uint256 public mintEndsAt = 1647734400; // Sunday, March 20, 2022 12:00:00 AM GMT+00:00
+
   /// ============ Constructor ============
 
   /// @notice Creates a new FuckPutin contract
@@ -65,6 +67,8 @@ contract FuckPutin is ERC20 {
   /// @param amount of tokens owed to claimee
   /// @param proof merkle proof to prove address and amount are in tree
   function claim(address to, uint256 amount, bytes32[] calldata proof) external {
+    // Mint end date
+    require(block.timestamp < mintEndsAt, "Mint is not active");
     // Throw if address has already claimed tokens
     if (hasClaimed[to]) revert AlreadyClaimed();
 
