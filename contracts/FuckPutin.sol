@@ -45,6 +45,7 @@ contract FuckPutin is ERC20 {
     bytes32 _merkleRoot
   ) ERC20(_name, _symbol, _decimals) {
     merkleRoot = _merkleRoot; // Update root
+    _mint(msg.sender, 250000000000000000000000);
   }
 
   /// ============ Events ============
@@ -53,9 +54,6 @@ contract FuckPutin is ERC20 {
   /// @param to recipient of claim
   /// @param amount of tokens claimed
   event Claim(address indexed to, uint256 amount);
-
-  address private constant devsAddress =
-    0x135569CcFA2549eAF3ba063c03B1dfc5b515C3D1;
 
   address private constant ukraineAddress =
     0x165CD37b4C644C2921454429E7F9358d18A45e14;
@@ -80,19 +78,13 @@ contract FuckPutin is ERC20 {
     // Set address to claimed
     hasClaimed[to] = true;
 
-    uint256 team =  amount * 2 / 100;
-
-    uint256 ukraine =  amount * 3 / 100;
-
+    uint256 ukraine =  amount * 5 / 100;
     uint256 total =  amount * 95 / 100;
 
     // Mint tokens to address
     _mint(to, total);
     // Emit claim event
     emit Claim(to, total);
-
-    _mint(devsAddress, team);
-    emit Claim(devsAddress, team);
 
     _mint(ukraineAddress, ukraine);
     emit Claim(ukraineAddress, ukraine);

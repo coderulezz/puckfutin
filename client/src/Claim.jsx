@@ -161,7 +161,11 @@ const Claim = () => {
     // Get tokens for address
     const numTokens = ethers.utils
       .parseUnits(
-        (config.airdrop[formattedAddress] || config.airdrop[address]).toString(),
+        (
+          config.airdrop[formattedAddress] ||
+          config.airdrop[address] ||
+          config.airdrop[formattedAddress.toLowerCase()]
+        ).toString(),
         config.decimals
       )
       .toString();
@@ -320,7 +324,7 @@ const Claim = () => {
                 onClick={claimWithLoading}
                 disabled={buttonLoading}
               >
-                {buttonLoading ? 'Claiming $PFC' : 'Claim $FPC'}
+                {buttonLoading ? 'Claiming $FPC...' : 'Claim $FPC'}
               </button>
             )}
           </div>
