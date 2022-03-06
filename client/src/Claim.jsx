@@ -331,6 +331,27 @@ const Claim = () => {
         </div>
       </div>
       <div className="fixed-bottom">
+        <div className="row disclaimer">
+          <div className="col-md-3">
+            <a
+              href="https://etherscan.io/address/0xec4e62080ac205539f3096e642dd3a7acd4665d4"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginLeft: 15, marginRight: 15 }}
+            >
+              Contract
+            </a>
+            |
+            <a
+              href="https://twitter.com/fputin_xyz/status/1500414606665457666"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginLeft: 15, marginRight: 15 }}
+            >
+              WTF is this?
+            </a>
+          </div>
+        </div>
         <div className="row">
           <div className="col-md-5">
             <p className="disclaimer">
