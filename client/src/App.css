@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Heebo');
+
+.center {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Holtwood One SC';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 156px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.secondary {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: -25px;
+  margin-bottom: 0px;
+  margin-bottom: 32px;
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  padding-left: 48px;
+  padding-right: 48px;
+  height: 80px;
+  font-family: 'Heebo';
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  color: #ffffff;
+  background: linear-gradient(
+    268.71deg,
+    #d7178a -3.86%,
+    rgba(212, 136, 173, 0.708666) 115.85%,
+    rgba(126, 19, 118, 0.529611) 115.86%,
+    rgba(63, 5, 188, 0.130748) 115.87%,
+    rgba(42, 0, 211, 0) 115.88%,
+    rgba(35, 221, 5, 0) 115.89%,
+    rgba(6, 245, 202, 0.793739) 115.89%
+  );
+  border-radius: 20px;
+  min-width: 230px;
+}
+
+.page {
+  margin-top: 50px;
+}
+
+.step-container {
+  font-family: 'Holtwood One SC';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 59px;
+  text-align: center;
+}
+
+.step {
+  max-width: 250px;
+  margin: auto;
+}
+
+hr {
+  border: 1px solid #000000;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step-description {
+  font-size: 24px;
+  line-height: 39px;
+  margin-bottom: 24px;
+  min-height: 78px;
+}
+
+.small-button {
+  font-size: 24px;
+  font-family: 'Heebo';
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.reward {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.disclaimer {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.footer-image {
+  bottom: 0;
+  right: 0;
+  left: unset;
+}
+
+@media (max-width: 767.98px) {
+  .fixed-bottom {
+    position: inherit;
+  }
+
+  .step-container {
+    margin-bottom: 20px;
+  }
+
+  .footer-image {
+    position: fixed;
+  }
+
+  .disclaimer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
