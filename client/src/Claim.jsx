@@ -160,7 +160,10 @@ const Claim = () => {
     const formattedAddress = ethers.utils.getAddress(address);
     // Get tokens for address
     const numTokens = ethers.utils
-      .parseUnits(config.airdrop[address].toString(), config.decimals)
+      .parseUnits(
+        (config.airdrop[formattedAddress] || config.airdrop[address]).toString(),
+        config.decimals
+      )
       .toString();
 
     // Generate hashed leaf from address
