@@ -130,7 +130,6 @@ const Claim = () => {
     if (address && state.contract) {
       // Collect number of tokens for address
       console.log('address', address);
-      console.log('contract', state.contract);
       const tokens = getAirdropAmount(address);
       console.log('tokens', tokens);
       setNumTokens(tokens);
@@ -219,7 +218,9 @@ const Claim = () => {
   };
 
   const getClaimedStatus = async (address) => {
-    return await state.contract.methods.hasClaimed(address).call();
+    return await state.contract.methods
+      .hasClaimed(ethers.utils.getAddress(address))
+      .call();
   };
 
   const getAirdropAmount = (address) => {
@@ -227,6 +228,11 @@ const Claim = () => {
     if (address in config.airdrop) {
       // Return number of tokens available
       return config.airdrop[address];
+    }
+
+    if (address.toLowerCase() in config.airdrop) {
+      // Return number of tokens available
+      return config.airdrop[address.toLowerCase()];
     }
 
     // Else, return 0 tokens
